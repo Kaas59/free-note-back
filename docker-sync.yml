@@ -1,0 +1,19 @@
+version: "2"
+syncs:
+  lunch-match_sync_volume:
+    src: './'
+     # IPの設定
+    #sync_host_ip: '127.0.0.1'
+    # rsyncのポート設定
+    # sync_host_port: 10871
+    #sync_args: '-v'
+    # ファイル同期方法の選択 rsync or unison
+    # sync_strategy: 'rsync'
+    sync_strategy: 'unison'
+
+    sync_excludes: ['tmp/']
+    #watch_excludes: ['tmp/']
+    watch_args: '-v'
+    sync_args:
+          - "-ignore='Path tmp'"
+          - "-ignore='BelowPath tmp'"
