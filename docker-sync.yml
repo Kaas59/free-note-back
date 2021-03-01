@@ -1,6 +1,6 @@
 version: "2"
 syncs:
-  lunch-match_sync_volume:
+  free-note-api_sync_volume:
     src: './'
      # IPの設定
     #sync_host_ip: '127.0.0.1'
